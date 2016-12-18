@@ -1,0 +1,351 @@
+/*nav menu style */
+* {
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #291f1a;
+    margin: 0px;
+}
+
+
+span {
+    font-weight: 400;
+    color: orange;
+    text-transform: capitalize;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+
+section {
+    padding: 0 80px 100px;
+    width: 100%;
+}
+
+section > h2 {
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    color: 
+}
+
+p {
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+/*nav menu style start */
+
+#main_nav {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+#main_nav ul li a {
+    color: #fff;
+}
+
+#main_nav ul li a:hover {
+    color: orange;
+}
+
+#main_nav.scroll {
+    background-color: white;
+}
+
+#main_nav.scroll ul li a {
+    color: #1ac056;
+}
+
+#main_nav.scroll ul li a:hover {
+    color: orange;
+}
+/*nav menu style stop */
+/*header style start*/
+
+#main_header {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    z-index: 1;
+    background-image: url('../img/header-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 800px;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.main-header-content {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.main-header-content #main-header-text {
+    text-transform: capitalize;
+    font-size: 4em;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+}
+
+.main-header-content #second-header-text {
+    font-weight: 100;
+    color: white;
+    font-size: 2em;
+    margin: 0;
+}
+
+#main_header #zjedz_dol a{
+	color: #fff;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+#main_header #zjedz_dol a:hover {
+	color: orange;
+}
+/*header style stop*/
+
+/*about section*/
+
+#about  figure  img{
+	max-height: 350px;
+	margin: 0;
+	border: 15px white solid;
+	border-radius: 15px;
+	display: inline; /*centrujemy alignem*/
+	max-width: 100%; /*odnosimy się do szer parenta*/
+}
+
+
+#about .about_content p {
+    font-weight: 800;
+    line-height: 20px;
+    margin: 0;
+    color: black;
+}
+
+/*about section stop*/
+
+/*skills section start*/
+#skills {
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+#skills div.skills_icons {
+	text-align: center;
+}
+
+#skills div.skills_icons figure {
+	margin-bottom: 15px;
+}
+
+#skills div.skills_icons figure img {
+	margin-bottom: 15px;
+}
+
+/*skills section stop*/
+
+/*portfolio sections start*/
+
+#portfolio #portfolio-item-1 {
+    background-image: url(../img/portfolio1.jpg);
+}
+
+#portfolio #portfolio-item-2 {
+    background-image: url(../img/portfolio2.jpg);
+}
+
+#portfolio #portfolio-item-3 {
+    background-image: url(../img/portfolio4.jpg);
+}
+
+#portfolio .portfolio-items {
+	text-align: center;
+	font-size: 0;
+}
+
+#portfolio .portfolio-items .single-portfolio-item {
+	height: 350px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	transition: all 0.3s;
+	
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask {
+	background-color: rgba(42, 61, 79, 0.8);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+	position: absolute;
+	font-size: initial;
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask:hover {
+	opacity: 1;
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask .single-portfolio-item-mask-content {
+	height: 330px;
+	border: 1px solid #fff;
+	margin: 10px;
+	position: relative;
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask .single-portfolio-item-mask-content .single-portfolio-item-mask-content-inner {
+	color: #fff;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    padding: 5px;
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask .single-portfolio-item-mask-content .single-portfolio-item-mask-content-inner a{
+	color: #fff;
+}
+
+#portfolio .portfolio-items .single-portfolio-item .single-portfolio-item-mask .single-portfolio-item-mask-content .single-portfolio-item-mask-content-inner a:hover{
+	color: #1ac056;
+}
+
+
+
+/*portfolio style off*/
+/* Section Contact Styles Start */
+
+#contact {
+	background-color: #213b50;
+	color: #fff;
+}
+
+#contact .contact-data h2{
+	text-align: left;
+	font-size: 38px;
+}
+
+#contact .contact-data address{
+	font-style: normal;
+	margin: 72px 0;
+	line-height: 25px;
+}
+
+#contact .contact-data address a{
+	color: orange;
+}
+
+#contact .contact-data .contact-social-icons a{
+	display: inline-block;
+	color: #fff;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+    line-height: 50px;
+    border-radius: 45px;
+	border: 1px solid #fff;
+	margin-right: 30px;
+	font-size: 22px;
+	transition: all 0.3s;
+}
+
+#contact .contact-data .contact-social-icons a:hover{
+	color: orange;
+	border: 1px solid #213b50;
+	background-color: #fff;
+}
+
+#contact .contact-form {
+	margin-top: 100px;
+}
+
+#contact .contact-form form input,
+#contact .contact-form form textarea{
+	width: 100%;
+	padding: 15px;
+    margin-bottom: 15px;
+    background-color: #2b4a64;
+    border: #2b4a64 0px;
+    color: #fff
+}
+
+#contact .contact-form form input:focus,
+#contact .contact-form form textarea:focus{
+    background-color: #426684;
+}
+
+#contact .contact-form form input[type="submit"]{
+	background-color: #1ac056;
+    color: #fff;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px 30px;
+    float: right;
+    border: 1px #1ac056 solid;
+	transition: all 0.3s;
+}
+
+#contact .contact-form form input[type="submit"]:hover{
+	background-color: #fff;
+    color: #1ac056;
+}
+
+/*contact data off*/
+
+/*footer on*/
+
+footer {
+    margin: 0;
+    height: auto;
+    background-color: #142634;
+    color: white;
+}
+
+footer p {
+    margin-top: -5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+/*footer off*/
+
+ 
