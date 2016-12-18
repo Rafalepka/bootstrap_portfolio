@@ -1,6 +1,6 @@
 $(function () {
     
-window.sr = ScrollReveal({ reset: true }).reveal('.container, .row');
+window.sr = ScrollReveal({ reset: true, duration: 1500 }).reveal('.container, .row');
     
     if ($(window).scrollTop() >= 50) {
 
@@ -11,6 +11,7 @@ window.sr = ScrollReveal({ reset: true }).reveal('.container, .row');
         $('#main_nav').removeClass('scroll')
 
     }
+    
 $(window).scroll(function () {
 
     if ($(window).scrollTop() >= 50) {
